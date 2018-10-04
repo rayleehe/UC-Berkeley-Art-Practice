@@ -1,0 +1,579 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,600,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" media="screen, handheld"/>
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+  <title>University of California, Berkeley -- Art Practice Website</title>
+  <style type="text/css">
+
+#asmaCollapsible{
+    grid-column: 6/7;
+    grid-row: 15/16;
+}
+
+#asmaContent{
+    grid-column: 6/10;
+    grid-row: 16/28;
+}
+
+#asmaOpening{
+    grid-column: 6/10;
+    grid-row: 14/15;
+}
+
+#asmaImg{
+    grid-column: 3/6;
+    grid-row: 14/20;
+}
+
+#asmaBanner{
+    grid-row: 18/18;
+    grid-column: 2/6;
+}
+
+#asmaContact{
+    grid-row: 20/22;
+    grid-column: 3/6;
+}
+
+#GregCollapsible{
+    grid-column: 6/7;
+    grid-row: 33/34;
+}
+
+#GregContent{
+    grid-column: 6/10;
+    grid-row: 34/44;
+}
+
+#GregOpening{
+    grid-column: 6/10;
+    grid-row: 30/33;
+}
+
+#GregImg{
+    grid-column: 3/6;
+    grid-row: 30/36;
+}
+
+#GregBanner{
+    grid-row: 32/32;
+    grid-column: 2/6;
+}
+
+#GregContact{
+    grid-row: 36/38;
+    grid-column: 3/6;
+}
+
+#StephanieCollapsible{
+    grid-column: 6/7;
+    grid-row: 49/49;
+}
+
+#StephanieContent{
+    grid-column: 6/10;
+    grid-row: 50/60;
+}
+
+#StephanieOpening{
+    grid-column: 6/10;
+    grid-row: 46/49;
+}
+
+#StephanieImg{
+    grid-column: 3/6;
+    grid-row: 46/54;
+}
+
+#StephanieBanner{
+    grid-row: 52/52;
+    grid-column: 2/6;
+}
+
+#StephanieContact{
+    grid-row: 54/56;
+    grid-column: 3/6;
+}
+
+#AlanCollapsible{
+    grid-column: 6/7;
+    grid-row: 61/61;
+}
+
+#AlanContent{
+    grid-column: 6/10;
+    grid-row: 62/75;
+}
+
+#AlanOpening{
+    grid-column: 6/10;
+    grid-row: 60/60;
+}
+
+#AlanImg{
+    grid-column: 3/6;
+    grid-row: 60/70;
+}
+
+#AlanBanner{
+    grid-row: 68/68;
+    grid-column: 2/6;
+}
+
+#AlanContact{
+    grid-row: 70/71;
+    grid-column: 3/6;
+}
+
+
+
+.collapsiblePeople {
+    color: #46B29D;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    padding-left: 40%;
+}
+
+.contentPeople {
+    padding: 0px;
+    display: none;
+    overflow: hidden;
+    padding-left: 10%;
+    margin-right: 8%;
+    margin-bottom: 100px;
+}
+
+.openingPeople{
+    display: block;
+    margin-top: 10%;
+    padding-left: 10%;
+    margin-right: 8%;
+
+}
+
+.imgPeople{
+    position: relative;
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+
+}
+
+.bannerPeople{
+    display: block;
+    margin-right: 10%;
+    background-color: #46B29D;
+    z-index: 2;
+    position: relative;
+    top: 100%;
+}
+
+.bannerPeople p{
+    color: white;
+    font-family: "Barlow",sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 0;
+    padding: 2%;
+}
+
+.bannerPeople #title{
+    color: white;
+    font-family: "Barlow",sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin: 0;
+    padding: 1%;
+}
+
+.contact {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 100px;
+
+}
+
+  </style>
+</head>
+<body>
+  <div class='grid'>
+    <!--Art Practice Header Container-->
+    <a href="../../index.html" class='home-link'>
+      <img src="../../assets/img/logo_21.jpg">
+    </a>
+    <div class='big-header'>
+        <div class='header-line1'><hr/></div>
+        <a href="../../index.html">
+          <div class='desktop-logo'><img src='../../assets/img/desktop_logoform.jpg'></div>
+        </a>
+        <div class='header'>
+        <!--U.C. BERKELEY-->
+          <div class='grey name-logo'>
+            <h1>PEOPLE</h1>
+          </div>
+        <!--Hamburger Menu-->
+          <button class='dropdown' onclick="myFunction(this); Function()">
+            <div class='hamburger bar1'></div>
+            <div class='hamburger bar2'></div>
+            <div class='hamburger bar3'></div>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <button class="collapsible">ABOUT</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/about.html">
+                <div class="box"><p>OVERVIEW</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/about_mission.html">
+                <div class="box"><p>MISSION + VISION</div>
+              </a>
+              <a style="display:block" href="../../assets/pages/about_history.html">
+                <div class="box"><p>HISTORY</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/about_campus.html">
+                <div class="box"><p>CAMPUS</div>
+              </a>
+              <a style="display:block" href="../../assets/pages/about_contact.html">
+                <div class="box"><p>CONTACT</div>
+              </a>
+            </div>
+            <button class="collapsible">PRACTICES</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/practices.html">
+                <div class="box-practices"><p>OVERVIEW</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_ceramics.html">
+                <div class="box-practices"><p>CERAMICS</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_drawing.html">
+                <div class="box-practices"><p>DRAWING + PAINTING</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_media.html">
+                <div class="box-practices"><p>NEW MEDIA</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_performance.html">
+                <div class="box-practices"><p>PERFORMANCE, SOUND + VIDEO</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_photography.html">
+                <div class="box-practices"><p>PHOTOGRAPHY</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_printmaking.html">
+                <div class="box-practices"><p>PRINTMAKING</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_sculpture.html">
+                <div class="box-practices"><p>SCULPTURE + INSTALLATION</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_social.html">
+                <div class="box-practices"><p>SOCIAL PRACTICE</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/practices_cats.html">
+                <div class="box-practices"><p>CATS</p></div>
+              </a>
+            </div>
+            <button class="collapsible">UNDERGRAD</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/undergraduate.html">
+                <div class="box-undergrad"><p>OVERVIEW</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/undergraduate_admission.html">
+                <div class="box-undergrad"><p>ADMISSION</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/undergraduate_ba.html">
+                <div class="box-undergrad"><p>B.A. DEGREE</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/undergraduate_curr.html">
+                <div class="box-undergrad"><p>CURRICULUM</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/undergraduate_minor.html">
+                <div class="box-undergrad"><p>ARTS MINOR</p></div>
+              </a>
+              <a style="display:block" href="=../../assets/pages/undergraduate_work.html">
+                <div class="box-undergrad"><p>WORK STUDY</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/undergraduate_aid.html">
+                <div class="box-undergrad"><p>STUDENT AID</p></div>
+              </a>
+            </div>
+            <button class="collapsible">GRADUATE</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/graduate.html">
+                <div class="box-grad"><p>OVERVIEW</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/graduate_admission.html">
+                <div class="box-grad"><p>ADMISSION</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/graduate_mfa.html">
+                <div class="box-grad"><p>M.F.A. DEGREE</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/graduate_curr.html">
+                <div class="box-grad"><p>CURRICULUM</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/graduate_gsi.html">
+                <div class="box-grad"><p>GRADUATE STUDENT INSTRUCTION</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/graduate_aid.html">
+                <div class="box-grad"><p>STUDENT AID</p></div>
+              </a>
+            </div>
+            <button class="collapsible">PEOPLE</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/people.html">
+                <div class="box-people"><p>ALUMNI</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/people_faculty.html">
+                <div class="box-people"><p>FACULTY</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/people_staff.html">
+                <div class="box-people"><p>STAFF</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/people_students.html">
+                <div class="box-people"><p>STUDENTS</p></div>
+              </a>
+            </div>
+            <button class="collapsible">NEWS</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/news_current.html">
+                <div class="box-news"><p>CURRENT</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/news_past.html">
+                <div class="box-news"><p>PAST</p></div>
+              </a>
+            </div>
+            <button class="collapsible">BLOG</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/blog.html">
+                <div class="box-blog"><p>SUB SPECIE ARTIS</p></div>
+              </a>
+            </div>
+            <button class="collapsible">EVENTS</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/events_current.html">
+                <div class="box-events"><p>CURRENT</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/events_past.html">
+                <div class="box-events"><p>PAST</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/events_lecture.html">
+                <div class="box-events"><p>LECTURE SERIES</p></div>
+              </a>
+            </div>
+            <button class="collapsible">GALLERY</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/gallery.html">
+                <div class="box-gallery"><p>OVERVIEW</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/gallery_current.html">
+                <div class="box-gallery"><p>CURRENT SHOWS</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/gallery_future.html">
+                <div class="box-gallery"><p>FUTURE SHOWS</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/gallery_past.html">
+                <div class="box-gallery"><p>PAST SHOWS</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/gallery_internships.html">
+                <div class="box-gallery"><p>INTERNSHIPS</p></div>
+              </a>
+            </div>
+            <button class="collapsible">FACILITIES</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/facilities.html">
+                <div class="box-facilities"><p>OVERVIEW</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_ceramics.html">
+                <div class="box-facilities"><p>CERAMICS</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_wood.html">
+                <div class="box-facilities"><p>WOOD SHOP</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_metal.html">
+                <div class="box-facilities"><p>METAL SHOP</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_photography.html">
+                <div class="box-facilities"><p>PHOTOGRAPHY</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_print.html">
+                <div class="box-facilities"><p>PRINT SHOP</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_digital.html">
+                <div class="box-facilities"><p>DIGITAL MEDIA</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_vr.html">
+                <div class="box-facilities"><p>VR/AR</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/facilities_gallery.html">
+                <div class="box-facilities"><p>GALLERY</p></div>
+              </a>
+              <a style="display:block" href="../../../../assets/pages/facilities_courtyard.html">
+                <div class="box-facilities"><p>COURTYARD</p></div>
+              </a>
+            </div>
+            <button class="collapsible">SUMMER</button>
+            <div class="content">
+              <a style="display:block" href="../../assets/pages/summer.html">
+                <div class="box-summer"><p>OVERVIEW</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/summer_courses.html">
+                <div class="box-summer"><p>COURSES</p></div>
+              </a>
+              <a style="display:block" href="../../assets/pages/summer_minor.html">
+                <div class="box-summer"><p>SUMMER ARTS MINOR</p></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='header-line2'><hr/></div>
+      </div>
+      <img class='img-about-head head-img' src="../../assets/img/People.png">
+      <div class='text-about' id='people'>
+        <h1>FACULTY</h1>
+      </div>
+      <!-- <div class='info-text' id='people'> -->
+
+        <!-- <div class='orange-box'></div> -->
+        <img class='imgPeople' id='asmaImg' src="../../assets/img/people/faculty/azma.png">
+
+        <p class='openingPeople' id='asmaOpening'><b style='font-size:130%;'>ASMA KAZMI</b> creates transdisciplinary, performative, relational works where people, media, and objects come together. She is the recipient of many awards including the Fulbright Research Award, (CIES) to India; the Faculty Research Grant, CalArts; the Great Rivers Biennial by the Contemporary Art Museum St. Louis; Rocket Grant, the Charlotte Street Foundation and the Spencer Museum of Art at Kansas University; At the Edge: Innovative Art in Chicago Award, the University of Illinois in Chicago; and the Creative Stimulus Award, Critical Mass for the Visual Arts, St. Louis.</p>
+        <button class='collapsiblePeople' id='asmaCollapsible'>>more</button>
+        <div class='contentPeople' id='asmaContent'>
+
+        <p>Asma Kazmi&#39;s selected solo and two person exhibitions include: the Commons Gallery, University of Hawaii in Honolulu; Faraar Gallery, Karachi, Pakistan; IBA, University of Karachi, Pakistan; LACE (Los Angeles Contemporary Exhibitions); 18th Street Arts Center, Santa Monica; Contemporary Art Museum, St. Louis; Gallery 210, University of Missouri St Louis; MassArt Film Society, Boston; Hunt Gallery, Webster University, St Louis; and Gallery 400, University of Illinois in Chicago. She been included in numerous group shows nationally and internationally at venues such as the Wattis Institute of Contemporary Art, San Francisco; San Jose Institute of Contemporary Art, San Jose, CA; Utah Museum of Contemporary Art, Salt Lake City; Queens Museum of Art, NY; H&R Block Space, Kansas City; The Guild Gallery, New York; and Galerie Sans Titre, Brussels, Belgium. 
+         </p><p>
+        She is the recipient of a Fulbright Research Award, (CIES) to India. She also received two Faculty Research Grants from CalArts, the Great Rivers Biennial Grant from the Contemporary Art Museum St. Louis, the Rocket Grant from the Spencer Museum of Art at the University of Kansas, and the At the Edge: Innovative Art in Chicago Award, by Gallery 400 at the University of Illinois in Chicago. At UC Berkeley, Kazmi has received the BCNM Seed Grant and Al-Falah Grant to support research in Saudi Arabia. 
+         </p><p>
+        She is currently an Assistant Professor in the Department of Art Practice at UC Berkeley. Previously, Asma Kazmi was permanent faculty and co-program director of the Art Program at the California Institute of the Arts in Los Angeles.
+        </p>
+        <p><b>WHY CAL?</b> I love teaching at UC Berkeley because my own artistic practice and research is broadened by my engagement with the vast range of intellectual disciplines and resources represented on campus.</p>
+        <p><b>FAVORITE CAL ARTIST?</b> Trinh T. Minh-ha</p>
+        </div>
+        <div class="bannerPeople" id='asmaBanner'><p>ASMA KAZMI <br><i id='title'>Assistant Professor</i></p></div>
+
+        <div class='contact' id='asmaContact'>
+        <div class='white'><p>email: <a href="mailto:akazmi@berkeley.edu">akazmi@berkeley.edu</a></p></div>
+        <div class='white'><p>website: <a href="http://asmakazmi.com">www.asmakazmi.com</a></p></div>
+        <div class='white'><p>Office: 337 Kroeber Hall</p></div>
+        </div>
+
+
+        <img class='imgPeople' id='GregImg' src="../../assets/img/people/faculty/Greg.png">
+
+        <p class='openingPeople' id='GregOpening'><b style='font-size:130%;'>GREGORY OTTO NIEMEYER</b> Born in Switzerland in 1967, Greg Niemeyer studied Classics and Photography. He started working with new media when he arrived in the San Francisco Bay Area in 1992. He received his MFA from Stanford University 1997. At the same time, he founded the Stanford University Digital Art Center.</p>
+        <button class='collapsiblePeople' id='GregCollapsible'>>more</button>
+        <div class='contentPeople' id='GregContent'>
+
+        <p>In 2001 he was appointed at UC Berkeley as a Professor for New Media in Art Practice. He co-founded and directed the Berkeley Center for New Media (BCNM), focusing on the critical analysis of the impact of new media on human experiences. His current work focuses on mediations between individuals, communities and environments. When do technologies dehumanize us, and when do they help us deepen human experiences? 
+         </p><p>
+        Greg Niemeyer loves working at Cal because he finds deep support and plenty of collaborative energy for wildly innovative projects among Cal colleagues, students and staff. 
+         </p>
+         <p><b>WHY CAL? </b>Greg Niemeyer loves working at Cal because he finds deep support and plenty of collaborative energy for wildly innovative projects among Cal colleagues, students and staff.
+        </p>
+        <p><b>FAVORITE CAL ARTIST?</b> Ian Cheng http://iancheng.com/</p>
+        </div>
+        <div class="bannerPeople" id='GregBanner'><p>GREG NIEMEYER <br><i id='title'>Associate Professor of Media Art</i></p></div>
+
+        <div class='contact' id='GregContact'>
+        <div class='white'><p>email: <a href="mailto:niemeyer@berkeley.edu">niemeyer@berkeley.edu</a></p></div>
+        <div class='white'><p>website: <a href="http://gregniemeyer.com">www.gregniemeyer.com</a></p></div>
+        <div class='white'><p>Office: 335 Kroeber Hall</p></div>
+        </div>
+
+
+
+
+        <img class='imgPeople' id='StephanieImg' src="../../assets/img/people/faculty/Stephanie.png">
+
+        <p class='openingPeople' id='StephanieOpening'><b style='font-size:130%;'>STEPHANIE SYJUCO</b> creates large-scale spectacles of collected cultural objects, cumulative archives, and temporary vending installations, often with an active public component that invites viewers to directly participate as producers or distributors. Using critical wit and collaborative co-creation, her projects leverage open-source systems, shareware logic, and flows of capital, in order to investigate issues of economies and empire. Recent installations and photographic series have explored the construction of ethnographic imagery, media distortion of contemporary public protest, and historical cultural conflicts, via materially-based props and sculptures arranged in large-scale tableaus.</p>
+        <button class='collapsiblePeople' id='StephanieCollapsible'>>more</button>
+        <div class='contentPeople' id='StephanieContent'>
+
+        <p>Born in the Philippines in 1974, Syjuco received her MFA from Stanford University and BFA from the San Francisco Art Institute. She is featured in the acclaimed PBS documentary series Art21: Art in the Twenty-First Century, Season 9, released in September 2018, and is included in the 2018 Renwick Invitational “Disrupting Craft” at the Smithsonian American Art Museum. Her awards and residencies include the Guggenheim Fellowship (2014), Artadia Fellowship Residency Award at the International Studio and Curatorial Program (2010), Joan Mitchell Painters & Sculptors Award (2009), and Skowhegan School of Painting and Sculpture (1997). She has had major exhibitions at the Museum of Modern Art (2018); the San Francisco Museum of Modern Art (2018, 2017, 2011, 2000); Havana Biennial (2015); Asian Art Biennial (2015); Z33 Space for Contemporary Art (2012); ZKM Center for Art and Media Technology (2011); MoMA P.S.1 (2009, 2006); and Whitney Museum of American Art (2005). Syjuco is a long-time educator and lives and works in Oakland. 
+         </p>
+         <p><b>WHY CAL?</b> I can’t think of a better place that supports a research-based arts practice within a world-class public university. As a site of collected knowledge, UC Berkeley offers its community of artists unprecedented access to libraries, facilities, and research opportunities all across campus. Plus, being at Cal fosters interdisciplinary thinking, and its radical history continues to shape the urgent nature of work being made by students and professors alike.</p>
+         <p><b>FAVORITE CAL ARTIST?</b> Chris E. Vargas</p>
+        </div>
+        <div class="bannerPeople" id='StephanieBanner'><p>STEPHANIE SYJUCO<br><i id='title'>Associate Professor of Sculpture</i></p></div>
+
+        <div class='contact' id='StephanieContact'>
+        <div class='white'><p>email: <a href="mailto:ssyjuco@berkeley.edu">ssyjuco@berkeley.edu</a></p></div>
+        <div class='white'><p>website: <a href="http://stephaniesyjuco.com"> www.stephaniesyjuco.com</a></p></div>
+        <div class='white'><p>Office: Wurster 176</p></div>
+        </div>
+
+
+
+        <img class='imgPeople' id='AlanImg' src="../../assets/img/people/faculty/alan.png">
+
+        <p class='openingPeople' id='AlanOpening'><b style='font-size:130%;'>ALLAN deSOUZA</b>&#39;s cross-media works restage colonial legacies through counter-strategies of humor, fiction, re-inscription, and (mis)translation. As an example, a recent project, Through the Black Country, transposes Henry Stanley’s 1870s East African expedition journals to England during the 2016 Brexit vote. </p>
+        <button class='collapsiblePeople' id='AlanCollapsible'>>more</button>
+        <div class='contentPeople' id='AlanContent'>
+
+        <P>deSouza&#39;s work has been shown extensively in the US and internationally, including at the Krannert Museum, IL; the Phillips Collection, Washington, DC; the International Center for Photography, NY; and the Pompidou Centre, Paris. deSouza&#39;s book, How Art Can Be Thought, (Duke, 2018) examines the vocabulary used to discuss art, and proposes decolonizing artistic and pedagogical practices that can form new attachments within the contemporary world. Most immediately, the book lays some foundations for strategies and goals of MFA programs in Studio Art. deSouza is represented by Talwar Gallery, NY and New Delhi.</P>
+
+        <p>deSouza received an MFA in Photography from UCLA, a BA(Hons) Fine Art from Bath Academy of Art, England, and participated in the Critical Studies program of the Whitney Independent Studies Program.  
+         </p>
+         <p><b>WHY CAL?</b> The opportunity to work collectively in a department and university that actively prepare students to develop more equitable futures against the active threats of the present.</p>
+         <p><b>FAVORITE CAL ARTIST?</b> There are way too many, although I consistently go back to Theresa Hak Kyung Cha</p>
+
+        </div>
+        <div class="bannerPeople" id='AlanBanner'><p>ALLAN deSOUZA<br><i id='title'>Associate Professor, Department Chair</i></p></div>
+
+        <div class='contact' id='AlanContact'>
+        <div class='white'><p>email: <a href="mailto:adesouza13@berkeley.edu">adesouza13@berkeley.edu</a></p></div>
+        <div class='white'><p>website: <a href="http://allandesouza.com/"> www.allandesouza.com</a></p></div>
+        <div class='white'><p>Office: Kroeber Hall 339</p></div>
+        </div>
+
+
+
+
+
+
+<!--       <div class="berkeley-logo"style="grid-row: 100/101;">
+      <hr/>
+      <img class="img-logo" src='../../assets/img/primarylogo.png'>
+    </div>
+    <div class="text-4"style="grid-row: 100/101;">
+      <hr/>
+      <p><b>Department of Art Practice<br>University of California, Berkeley<br><span class='grey'>347 Kroeber Hall<br>Berkeley, CA</span></b></p>
+    </div>
+    <div class="text-5"style="grid-row: 100/101;">
+      <hr/>
+      <p><b>Contact Us<br>Site Map<br>Log In<br>Privacy Policy<br><span class='grey copy'>&copy 2018 UC REGENTS<br>ALL RIGHTS RESERVED.</span></b></p>
+    
+    </div> -->
+        
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/script.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsiblePeople");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var banner = content.nextElementSibling;
+    if (content.style.display === "block") {
+      // banner.style.gridRow="18/18"
+      this.innerHTML = ">more"
+      content.style.display = "none";
+    } else {
+      // banner.style.gridRow="17 / 18"
+      this.innerHTML = ">less"
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</html>
